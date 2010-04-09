@@ -19,7 +19,7 @@ When you scan your system you undoubtedly see the eval used in javascript becaus
 
 The plugin continues its scan by checking the database tables for javascript or html where it should not be found.
 
-Normally, javascript is common in the post body, but if the script tag is found in a title or a text field where it does not belong it is probably because the script his hiding something, such as a hidden admin user, so that the normal administration pages do not show bad records. The scan looks for this and displays the table and record number where it believes there is something hinky.
+Normally, javascript is common in the post body, but if the script tag is found in a title or a text field where it does not belong it is probably because the script is hiding something, such as a hidden admin user, so that the normal administration pages do not show bad records. The scan looks for this and displays the table and record number where it believes there is something hinky.
 
 The scan continues looking in the database for certain html in places where it does not belong. Recent threats have been putting html into fields in the options table so that users will be sent to malicious sites. The presence of html in options values is suspect and should be checked.
 
