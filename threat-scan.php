@@ -41,6 +41,7 @@ function kpg_threat_scan_options() {
 	<p>You may want to export your Wordpress posts, make a new clean installation of Wordpress, and then import the old posts.</p>
 	<p>If this doesn't work it is time to get a pro involved.<p>
 	<h3>A clean scan does not mean you are safe. Please do Backups and keep your installation up to date!</h3>
+
 	<hr/>
 	
 		<?php
@@ -196,6 +197,36 @@ echo "<hr/>";
 echo "<h3>Scanning Themes and Plugins for eval</h3>";
 
 kpg_scan_for_eval();
+
+?>
+
+<hr/>
+<h3>If you like this plugin, why not try out these other interesting plugins.</h3>
+<?php
+// list of plugins
+$p=array(
+"facebook-open-graph-widget"=>"The easiest way to add a Facebook Like buttons to your blog' sidebar",
+"threat-scan-plugin"=>"Check your blog for virus, trojans, malicious software and other threats",
+"open-in-new-window-plugin"=>"Keep your surfers. Open all external links in a new window",
+"youtube-poster-plugin"=>"Automagically add YouTube videos as posts. All from inside the plugin. Painless, no heavy lifting.",
+"permalink-finder"=>"Never get a 404 again. If you have restructured or moved your blog, this plugin will find the right post or page every time",
+);
+  $f=$_SERVER["REQUEST_URI"];
+  // get the php out
+  $ff=explode('page=',$f);
+  $f=$ff[1];
+  $ff=explode('/',$f);
+  $f=$ff[0];
+  foreach ($p as $key=>$data) {
+	if ($f!=$key) { 
+	$kk=urlencode($key);
+		?><p>&bull;<span style="font-weight:bold;"> <?PHP echo $key ?>: </span> <a href="plugin-install.php?tab=plugin-information&plugin=<?PHP echo $kk ?>&TB_iframe=true&width=640&height=669">Install Plugin</a> - <span style="font-style:italic;font-weight:bold;"><?PHP echo $data ?></span></p><?PHP 
+	}
+  }
+
+
+
+
 
 
 } // end of function
