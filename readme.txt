@@ -5,7 +5,7 @@ Donate link: https://online.nwf.org/site/Donation2?df_id=6620&6620.donation=form
 Requires at least: 2.6
 Tested up to: 2.9.2
 Contributors: Keith Graham
-Stable tag: 0.8
+Stable tag: 0.9
 
 This is a very simple threat scan that looks for things out of place in the content directory as well as the database.
 
@@ -50,6 +50,9 @@ A clean scan does not mean you are safe. Please do Backups and keep your install
 
 = 0.8 =
 * First test release
+
+= 0.9 =
+* Fix small errors and compatibility with Wordpress 3.0
 
 
 == Support ==

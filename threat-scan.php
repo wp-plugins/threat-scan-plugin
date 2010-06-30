@@ -3,7 +3,7 @@
 Plugin Name: Threat Scan Plugin
 Plugin URI: http://www.BlogsEye.com/
 Description: A simple scan of the Wordpress Content and Database looking for possible threats.
-Version: 0.8
+Version: 0.9
 Author: Keith P. Graham
 Author URI: http://www.BlogsEye.com/
 
@@ -268,7 +268,7 @@ function kpg_scan_for_eval() {
 	
 	} else {
 	?>
-	<h3>No broblems found!</h3>
+	<h3>No problems found!</h3>
 	<p>It appears tha there are no eval or suspicious javascript functions in the code in your wp-content directory. That does not mean that you are safe, only that a threat may be well hidden.</p>
 	<?php	
 	}
