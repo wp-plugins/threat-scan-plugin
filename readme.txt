@@ -1,11 +1,12 @@
 === Threat Scan Plugin ===
 Tags: Threats, Virus, Hacked, Scan, Malicious code
-Stable tag: trunk
-Donate link: https://online.nwf.org/site/Donation2?df_id=6620&6620.donation=form1
-Requires at least: 2.6
-Tested up to: 2.9.2
+Donate link: http://www.blogseye.com/buy-the-book/
+Requires at least: 3.0
+Tested up to: 3.5
 Contributors: Keith Graham
-Stable tag: 0.9
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This is a very simple threat scan that looks for things out of place in the content directory as well as the database.
 
@@ -47,12 +48,16 @@ A clean scan does not mean you are safe. Please do Backups and keep your install
 4. There are no options. Clicking on the Settings link will perform the scan.
 
 == Changelog ==
+= 1.0 =
+* Added more detailed information
+* Confirmed compatibility with Wordpress 3.5
+
+= 0.9 =
+* Fix small errors and compatibility with Wordpress 3.0
 
 = 0.8 =
 * First test release
 
-= 0.9 =
-* Fix small errors and compatibility with Wordpress 3.0
 
 
 == Support ==
